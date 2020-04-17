@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   children: <Widget>[
                     Container(
-                      width: 100,
+                      width: 101,
                       child: Image(
                           image:
                               AssetImage('lib/assets/amazon-logo-white.png')),
