@@ -21,29 +21,24 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: DrawerTab()
-      ),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: darkBlue,
-        title: Row(
+        drawer: Drawer(child: DrawerTab()),
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: darkBlue,
+          title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                child:SingleChildScrollView(
+                  child: SingleChildScrollView(
                 child: Row(
-
                   children: <Widget>[
                     Container(
                       width: 101,
@@ -53,42 +48,38 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 ),
-                )
-              ),
+              )),
               Container(
-                child:SingleChildScrollView(
+                  child: SingleChildScrollView(
                 child: Row(
                   children: <Widget>[
-                   /* IconButton(
+                    IconButton(
                       icon: Icon(Icons.mic, color: Colors.white),
                       onPressed: () {},
-                    ),*/
+                    ),
                     IconButton(
                       icon: Icon(Icons.shopping_cart, color: Colors.white),
                       onPressed: () {},
                     )
                   ],
                 ),
-                )
-              )
+              ))
             ],
           ),
-      ),
-      body: Container(
-          constraints: BoxConstraints.expand(),
-          color: Colors.grey,
-          child: SingleChildScrollView(
-                      child: Column(
-              children: <Widget>[
-                TopBar(),
-                Container(
-                  height: MediaQuery.of(context).size.height - 140,
-                 child: ProductList(),
-                )
-              ],
-            ),
-          )
-        )
-    );
+        ),
+        body: Container(
+            constraints: BoxConstraints.expand(),
+            color: Colors.grey,
+            child: SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  TopBar(),
+                  Container(
+                    height: MediaQuery.of(context).size.height - 140,
+                    child: ProductList(),
+                  )
+                ],
+              ),
+            )));
   }
 }
