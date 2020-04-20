@@ -117,7 +117,7 @@ class DrawerTab extends StatelessWidget {
                               ),
                               Icon(
                                 Icons.arrow_forward_ios,
-                                size: 14,
+                                size: 13,
                               )
                             ],
                           ),
