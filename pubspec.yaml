@@ -46,7 +46,7 @@ flutter:
   #  - images/a_dot_ham.jpeg
    # To add assets to your application, add an assets section, like this:
   assets:
-   - lib/assets/amazonfresh.png
+   - lib/assets/amazonfresh.jpg
    - lib/assets/fresh.png
    - lib/assets/funzone.png
    - lib/assets/pantry.png
