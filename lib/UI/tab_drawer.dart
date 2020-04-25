@@ -57,7 +57,7 @@ class DrawerTab extends StatelessWidget {
                         Navigator.pop(context);
                       }),
                   FlatButton(
-                      child: Text("Sell on Amazon"),
+                      child: Text("Sell/Deal on Amazon"),
                       onPressed: () {
                         Navigator.pop(context);
                       }),
