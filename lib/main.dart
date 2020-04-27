@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: <Widget>[
                   TopBar(),
                   Container(
-                    height: MediaQuery.of(context).size.height - 140,
+                    height: MediaQuery.of(context).size.height - 138,
                     child: ProductList(),
                   )
                 ],
